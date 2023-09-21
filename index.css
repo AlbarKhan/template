@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* NAVBAR  */
+header {
+    padding: 10px 50px;
+}
+.logo {
+    overflow: auto;
+    display:inline;
+    margin-top: 5px;
+}
+.topnav {
+    overflow: hidden; 
+    /* border: 1px solid; */
+    padding: 15px;  
+}
+
+.topnav .links {
+    float: right;
+    /* border: 1px solid; */
+    height: 100%;
+}
+
+.topnav .links a{
+    text-decoration: none;
+    font-size: 14px;
+    padding:14px 20px;
+    color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.topnav .links a:hover {
+    text-decoration: underline;
+}
+
+.topnav .icon {
+    display:  none;
+}
+
+.topnav a.active{
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width:620px){
+
+    header {
+        padding: 10px 5px;
+    }
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+        float: right;
+    }
+}
+
+@media screen and (max-width:620px){
+    .topnav {
+        padding: 0px 0px;
+    }
+    .topnav.responsive {
+        position:relative;
+        /* border: 1px solid; */
+        padding: 0px 0px;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .topnav.responsive .links {
+        /* border: 1px solid; */
+        width: 100%;
+    }
+
+    .topnav.responsive .links a {
+        /* float: none; */
+        display: block;
+    }
+    .topnav.responsive a.active {
+        display: none;
+    }
+}
+/* NVABRA END */
+
+/* Heading Start */
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    /* border: 1px solid; */
+    margin: 20px 0px;
+    /* margin-left: 15%; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+.heading h2 {
+    text-align: center;
+    font-size: 54px;
+    font-family: sans-serif;
+    font-weight: 400;
+    /* line-height: 64px; */
+}
+.heading h4 {
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 400;
+}
+
+@media (max-width:600px){
+    .heading h2 {
+        font-size: 32px;
+    }
+    .heading h4 {
+        font-size: 18px;
+    }
+}
