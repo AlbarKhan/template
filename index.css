@@ -111,7 +111,7 @@ header {
     /* border: 1px solid; */
     margin: 20px 0px;
     /* margin-left: 15%; */
-    width: 90%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 
@@ -127,6 +127,7 @@ header {
     font-size: 24px;
     line-height: 120%;
     font-weight: 400;
+    font-family: sans-serif;
 }
 
 @media (max-width:600px){
@@ -169,6 +170,7 @@ header {
     line-height: 100%;
     margin-top: 25px;
     text-align: center;
+    word-break: break-all;
 }
 
 
@@ -180,5 +182,48 @@ header {
 .iconss {
 
 }
-
 /* images end */
+
+/* vision */
+
+.vision {
+    width: 100%;
+    margin-top: 35px;
+    position: relative;
+}
+
+.vision img {
+    width: 100%;
+}
+
+.vision-content {
+    position: absolute;
+    width: 50%;
+    top: 10%;
+    left: 12%;
+}
+
+.vision-content h2 {
+    font-size: 54px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.vision-content p {
+    font-size: 24px;
+    color: white;
+    word-break: break-all;
+    font-family: sans-serif;
+}
+
+.vision-content span {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+
+/* vision -end */
